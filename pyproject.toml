@@ -1,0 +1,34 @@
+[project]
+name = "alpha-agent"
+version = "0.1.0"
+description = "Multi-agent investment research and decision support system for buy-side workflows."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0,<0.116.0",
+  "uvicorn>=0.30.0,<0.31.0",
+  "streamlit>=1.40.0,<1.41.0",
+  "pandas>=2.2.3,<2.4.0",
+  "numpy>=2.2.0,<3.0.0",
+  "pydantic>=2.8.0,<2.11.0",
+  "langgraph>=0.2.0,<0.3.0",
+  "yfinance>=0.2.40,<0.3.0",
+  "httpx>=0.27.0,<0.29.0",
+  "openai>=1.40.0,<2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3.0,<9.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agents*", "app*", "config*", "data*", "engine*", "exports*", "pipelines*", "schemas*", "storage*", "utils*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
