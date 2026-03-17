@@ -1,10 +1,10 @@
 # AlphaAgent
 
-AlphaAgent is a multi-agent AI investment research and decision-support system that simulates a realistic buy-side hedge fund workflow, from idea discovery to PM-ready memo generation.
+AlphaAgent is a multi-agent AI investment research and decision-support platform designed to support buy-side fundamental equities workflows, from idea discovery to PM-ready memo generation.
 
 ## What It Does
 
-AlphaAgent runs a research workflow that mirrors how an analyst or PM would investigate a stock idea:
+AlphaAgent runs a research workflow designed to support how an analyst or PM would investigate a stock idea:
 
 `data ingestion -> multi-signal screening -> deep single-name research -> valuation and risk framing -> memo draft -> critique loop -> evaluator checks -> final memo`
 
