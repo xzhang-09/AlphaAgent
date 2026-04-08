@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Test and tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environment/config
+.env
+
+# macOS / editor noise
+.DS_Store
+
+# Streamlit local config/state
+.streamlit/
+
+# Build / packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# App runtime storage
+storage/cache/*
+storage/vector_db/*
+storage/exports/*
+storage/ideas/*
+
+# Keep storage directories in git
+!storage/cache/.gitkeep
+!storage/vector_db/.gitkeep
+!storage/exports/.gitkeep
+!storage/ideas/.gitkeep
